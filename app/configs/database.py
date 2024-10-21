@@ -1,14 +1,9 @@
 from typing import Annotated
 
 from fastapi import Depends
-from sqlmodel import (
-	Session,
-	create_engine,
-)
+from sqlmodel import Session, create_engine
 
-from app.configs.settings import (
-	get_settings,
-)
+from app.configs.settings import get_settings
 
 settings = get_settings()
 mysql_url = settings.db_dsn_sync

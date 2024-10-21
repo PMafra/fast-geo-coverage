@@ -2,9 +2,7 @@ import logging
 import logging.config
 from typing import Any
 
-from app.configs.settings import (
-	get_settings,
-)
+from app.configs.settings import get_settings
 
 
 def get_logging_config() -> dict[str, Any]:
